@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <title>Wiki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Project</a></li>
+      <li><a href="#">Software</a></li>
+      <li><a href="#">Human Practices</a></li>
+      <li><a href="#">The Team</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">SpaceBIO</a></li>
+      <li class="hideOnMobile"><a href="#">Home</a></li>
+      <li class="hideOnMobile"><a href="#">Project</a></li>
+      <li class="hideOnMobile"><a href="#">Software</a></li>
+      <li class="hideOnMobile"><a href="#">Human Practices</a></li>
+      <li class="hideOnMobile"><a href="#">The Team</a></li>
+      <li class="menu-button" onclick="showSidebar()">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26">
+            <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" fill="#FFFFFF"/>
+          </svg>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+
+  <div class="Home">
+   <div class="content">
+    <h1>Motivations</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatibus error repellat non voluptates tempora ex cupiditate. Fugit, cumque dolorum. Blanditiis facilis possimus nesciunt maiores voluptatum, non consequuntur distinctio accusantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatibus error repellat non voluptates tempora ex cupiditate. Fugit, cumque dolorum. Blanditiis facilis possimus nesciunt maiores voluptatum, non consequuntur distinctio accusantium!</p>
+    
+    <h1>Background</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatibus error repellat non voluptates tempora ex cupiditate. Fugit, cumque dolorum. Blanditiis facilis possimus nesciunt maiores voluptatum, non consequuntur distinctio accusantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatibus error repellat non voluptates tempora ex cupiditate. Fugit, cumque dolorum. Blanditiis facilis possimus nesciunt maiores voluptatum, non consequuntur distinctio accusantium!</p>
+
+    <h1>Project</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatibus error repellat non voluptates tempora ex cupiditate. Fugit, cumque dolorum. Blanditiis facilis possimus nesciunt maiores voluptatum, non consequuntur distinctio accusantium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, voluptatibus error repellat non voluptates tempora ex cupiditate. Fugit, cumque dolorum. Blanditiis facilis possimus nesciunt maiores voluptatum, non consequuntur distinctio accusantium!</p>
+  </div>
+
+</div>
+
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>Follow us on social media:</p>
+    <ul class="social-icons">
+      <li><a href="https://www.youtube.com/" style="color: wheat;">youtube</a></li>
+      <li><a href="https://www.instagram.com/" style="color: wheat;">instagram</a></li>
+    </ul>
+  </div>
+  
+
+
+
+  <div class="footer">
+    © 2024 - demo wiki by Ganesh. 
+  </div>
+
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+
+    
+    
+  </script>
+</body>
+</html>

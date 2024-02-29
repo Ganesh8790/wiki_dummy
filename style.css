@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #ffffff;
+  background: url(blue.jpeg);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.content {
+  margin-top: 150px;
+}
+nav {
+  background-color: black;
+}
+nav ul {
+  width: 100%;
+  height: 80px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: xx-large;
+}
+nav li {
+  height: 80px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(202, 194, 180);
+}
+nav a:hover {
+  background-color: rgb(69, 69, 208);
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.Home H1 {
+  margin-top: 50px;
+  color: rgb(213, 210, 178);
+}
+
+.Home p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: normal;
+  color: rgb(202, 194, 180);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contact {
+  color: rgb(202, 194, 180);
+  font-size: 20px;
+}
+
+.footer {
+  font-size: x-large;
+  color: rgb(202, 194, 180);
+  height: 50px;
+}
